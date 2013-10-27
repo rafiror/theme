@@ -23,14 +23,21 @@ cdef int cal(list resource_node, int n_node, list capacity, list resource_traffi
     sum_load = 0
     node_traffic = [0] * n_node
     cdef float load
-    for x in range(n_node):
-        for y in range(n_node):
-            for i in range(n_resource):
-                for j in range(n_resource):
+    x = 0
+    while x < n_node:
+        y = 0
+        while y < n_node:
+            i = 0
+            while i < n_resource:
+                j = 0
+                while j < n_resource:
                     if x != y:
                         node_resource_traffic[i][j][x][y] += resource_traffic[i][j] * resource_node[i][x] * resource_node[j][y]
                     link_traffic[x][y] += node_resource_traffic[i][j][x][y]
+                    j += 1
+                i += 1
             node_traffic[x] += link_traffic[x][y]
+            y += 1
         #Add IF(node_traffic[x] > capacity[x]) to reduce computation time
         logging.debug('node_traffic[%d] = %d' % (x,node_traffic[x]))
         if node_traffic[x] > capacity[x]:
@@ -50,7 +57,7 @@ cdef int cal(list resource_node, int n_node, list capacity, list resource_traffi
             elif load < CONDITIONAL_F:
                 node_load[x] += 5000
             sum_load += node_load[x]
-    
+        x += 1
     return sum_load
 
 cdef list resource_node_mapping_cal(int n_resource, int n_node, int n_vm_only_bare, int n_vm, list resource_node, list capacity, list resource_traffic, int min_load, list opt_resource_node):

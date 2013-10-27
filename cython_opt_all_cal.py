@@ -20,8 +20,8 @@ if __name__ == "__main__":
     n_node = len(resource_node[0])
     n_vm_only_bare = int(argvs[3])
     n_vm = int(argvs[4])
-    capacity = [20] * n_node
-    logging.basicConfig(filename=argvs[5],level=logging.DEBUG)
+    capacity = [50] * n_node
+    logging.basicConfig(filename=argvs[5],level=logging.ERROR)
     logging.debug(resource_traffic)
     logging.debug(resource_node)
     min_load = MAX
