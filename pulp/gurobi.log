@@ -1,0 +1,147 @@
+
+Gurobi 5.5.0 (mac64) logging started Mon Oct 28 23:39:27 2013
+
+
+Gurobi 5.5.0 (mac64) logging started Mon Oct 28 23:39:37 2013
+
+
+Gurobi 5.5.0 (mac64) logging started Mon Oct 28 23:44:45 2013
+
+
+Gurobi 5.5.0 (mac64) logging started Mon Oct 28 23:46:07 2013
+
+
+Gurobi 5.5.0 (mac64) logging started Mon Oct 28 23:49:40 2013
+
+Optimize a model with 140 rows, 765 columns and 5325 nonzeros
+Found heuristic solution: objective 88.3683
+Presolve time: 0.02s
+Presolved: 140 rows, 765 columns, 5325 nonzeros
+Variable types: 15 continuous, 750 integer (750 binary)
+
+Root relaxation: objective 3.752788e+01, 207 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   37.52788    0   14   88.36834   37.52788  57.5%     -    0s
+H    0     0                      43.4310654   37.52788  13.6%     -    0s
+     0     0   37.52788    0   24   43.43107   37.52788  13.6%     -    0s
+     0     0   37.52788    0   12   43.43107   37.52788  13.6%     -    0s
+     0     0   37.52788    0   20   43.43107   37.52788  13.6%     -    0s
+     0     0   37.52788    0   20   43.43107   37.52788  13.6%     -    0s
+H    0     0                      40.6404128   37.52788  7.66%     -    0s
+H    0     4                      40.2492694   37.52788  6.76%     -    0s
+     0     4   37.52788    0   20   40.24927   37.52788  6.76%     -    0s
+*   82     5              30      39.9407776   39.00937  2.33%   9.7    0s
+*  233    51              21      39.6266841   39.00937  1.56%   7.5    0s
+*  632   105              61      39.6055140   39.00937  1.51%   6.5    0s
+*  803   172              50      39.5232253   39.00937  1.30%   6.1    0s
+* 1088    52             132      39.3608412   39.00937  0.89%   5.5    0s
+* 1205    56              41      39.2007378   39.00937  0.49%   5.6    0s
+* 1563   214              65      39.1431749   39.00937  0.34%   5.5    0s
+* 1937   179              94      39.0449279   39.00937  0.09%   5.1    0s
+* 2067   270              67      39.0242908   39.00937  0.04%   5.1    0s
+* 2080    18              75      39.0093713   39.00937  0.00%   5.0    0s
+
+Cutting planes:
+  Cover: 13
+  Clique: 1
+  MIR: 12
+
+Explored 2452 nodes (13128 simplex iterations) in 0.58 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.900937133073e+01, best bound 3.900937133073e+01, gap 0.0%
+
+Gurobi 5.5.0 (mac64) logging started Mon Oct 28 23:51:48 2013
+
+Optimize a model with 140 rows, 765 columns and 5325 nonzeros
+Found heuristic solution: objective 88.3683
+Presolve time: 0.01s
+Presolved: 140 rows, 765 columns, 5325 nonzeros
+Variable types: 15 continuous, 750 integer (750 binary)
+
+Root relaxation: objective 3.752788e+01, 207 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   37.52788    0   14   88.36834   37.52788  57.5%     -    0s
+H    0     0                      43.4310654   37.52788  13.6%     -    0s
+     0     0   37.52788    0   24   43.43107   37.52788  13.6%     -    0s
+     0     0   37.52788    0   12   43.43107   37.52788  13.6%     -    0s
+     0     0   37.52788    0   20   43.43107   37.52788  13.6%     -    0s
+     0     0   37.52788    0   20   43.43107   37.52788  13.6%     -    0s
+H    0     0                      40.6404128   37.52788  7.66%     -    0s
+H    0     4                      40.2492694   37.52788  6.76%     -    0s
+     0     4   37.52788    0   20   40.24927   37.52788  6.76%     -    0s
+*   82     5              30      39.9407776   39.00937  2.33%   9.7    0s
+*  233    51              21      39.6266841   39.00937  1.56%   7.5    0s
+*  632   105              61      39.6055140   39.00937  1.51%   6.5    0s
+*  803   172              50      39.5232253   39.00937  1.30%   6.1    0s
+* 1088    52             132      39.3608412   39.00937  0.89%   5.5    0s
+* 1205    56              41      39.2007378   39.00937  0.49%   5.6    0s
+* 1563   214              65      39.1431749   39.00937  0.34%   5.5    0s
+* 1937   179              94      39.0449279   39.00937  0.09%   5.1    0s
+* 2067   270              67      39.0242908   39.00937  0.04%   5.1    0s
+* 2080    18              75      39.0093713   39.00937  0.00%   5.0    0s
+
+Cutting planes:
+  Cover: 13
+  Clique: 1
+  MIR: 12
+
+Explored 2452 nodes (13128 simplex iterations) in 0.57 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.900937133073e+01, best bound 3.900937133073e+01, gap 0.0%
+
+Gurobi 5.5.0 (mac64) logging started Mon Oct 28 23:52:05 2013
+
+Optimize a model with 140 rows, 765 columns and 5325 nonzeros
+Found heuristic solution: objective 88.3683
+Presolve time: 0.01s
+Presolved: 140 rows, 765 columns, 5325 nonzeros
+Variable types: 15 continuous, 750 integer (750 binary)
+
+Root relaxation: objective 3.752788e+01, 207 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   37.52788    0   14   88.36834   37.52788  57.5%     -    0s
+H    0     0                      43.4310654   37.52788  13.6%     -    0s
+     0     0   37.52788    0   24   43.43107   37.52788  13.6%     -    0s
+     0     0   37.52788    0   12   43.43107   37.52788  13.6%     -    0s
+     0     0   37.52788    0   20   43.43107   37.52788  13.6%     -    0s
+     0     0   37.52788    0   20   43.43107   37.52788  13.6%     -    0s
+H    0     0                      40.6404128   37.52788  7.66%     -    0s
+H    0     4                      40.2492694   37.52788  6.76%     -    0s
+     0     4   37.52788    0   20   40.24927   37.52788  6.76%     -    0s
+*   82     5              30      39.9407776   39.00937  2.33%   9.7    0s
+*  233    51              21      39.6266841   39.00937  1.56%   7.5    0s
+*  632   105              61      39.6055140   39.00937  1.51%   6.5    0s
+*  803   172              50      39.5232253   39.00937  1.30%   6.1    0s
+* 1088    52             132      39.3608412   39.00937  0.89%   5.5    0s
+* 1205    56              41      39.2007378   39.00937  0.49%   5.6    0s
+* 1563   214              65      39.1431749   39.00937  0.34%   5.5    0s
+* 1937   179              94      39.0449279   39.00937  0.09%   5.1    0s
+* 2067   270              67      39.0242908   39.00937  0.04%   5.1    0s
+* 2080    18              75      39.0093713   39.00937  0.00%   5.0    0s
+
+Cutting planes:
+  Cover: 13
+  Clique: 1
+  MIR: 12
+
+Explored 2452 nodes (13128 simplex iterations) in 0.56 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.900937133073e+01, best bound 3.900937133073e+01, gap 0.0%
+
+Gurobi 5.5.0 (mac64) logging started Mon Oct 28 23:54:24 2013
+
